@@ -7,8 +7,10 @@
     "index.js"
   ],
   "scripts": {
+    "pretest": "standard",
     "test": "jest",
-    "lint": "standard"
+    "lint": "standard --format",
+    "changelog": "standard-version"
   },
   "keywords": [
     "postcode",
@@ -17,7 +19,8 @@
   ],
   "devDependencies": {
     "jest": "16.0.2",
-    "standard": "8.5.0"
+    "standard": "8.5.0",
+    "standard-version": "3.0.0"
   },
   "author": "Dan Hayden <dhayden09@gmail.com>",
   "license": "MIT",
