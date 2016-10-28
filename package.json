@@ -1,0 +1,36 @@
+{
+  "name": "dh-postcode",
+  "version": "1.0.0",
+  "description": "simple uk postcode validation and formatting",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "standard"
+  },
+  "keywords": [
+    "postcode",
+    "validation",
+    "formatting"
+  ],
+  "devDependencies": {
+    "jest": "16.0.2",
+    "standard": "8.5.0"
+  },
+  "author": "Dan Hayden <dhayden09@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "16.0.2",
+    "standard": "8.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danhayden/dh-postcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danhayden/dh-postcode/issues"
+  },
+  "homepage": "https://github.com/danhayden/dh-postcode#readme"
+}
