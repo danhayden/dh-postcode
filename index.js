@@ -16,7 +16,7 @@ module.exports = function Postcode (rawPostcode) {
   }
 }
 
-function sanitise (postcode) {
+const sanitise = function (postcode) {
   postcode = postcode || ''
   postcode = postcode.replace(/\s+/g, '')
   postcode = postcode.replace(/\+/g, '')
@@ -30,6 +30,6 @@ function sanitise (postcode) {
   return postcode
 }
 
-function validate (postcode) {
+const validate = function (postcode) {
   return !!postcode.match(validationRegex)
 }
