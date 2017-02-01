@@ -18,15 +18,15 @@
     "formatting"
   ],
   "devDependencies": {
-    "jest": "16.0.2",
-    "standard": "8.5.0",
-    "standard-version": "3.0.0"
+    "jest": "18.1.0",
+    "standard": "8.6.0",
+    "standard-version": "4.0.0"
   },
   "author": "Dan Hayden <dhayden09@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jest": "16.0.2",
-    "standard": "8.5.0"
+    "jest": "18.1.0",
+    "standard": "8.6.0"
   },
   "repository": {
     "type": "git",
