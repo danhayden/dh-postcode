@@ -1,6 +1,6 @@
 {
   "name": "dh-postcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simple uk postcode validation and formatting",
   "main": "index.js",
   "files": [
