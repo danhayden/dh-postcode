@@ -1,22 +1,7 @@
-const validationRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i
-const NON_BREAKING_SPACE = ' '
+var validationRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i
+var NON_BREAKING_SPACE = ' '
 
-module.exports = function Postcode (rawPostcode) {
-  const formattedPostcode = sanitise(rawPostcode)
-  const valid = validate(formattedPostcode)
-
-  return {
-    valid: function () {
-      return valid
-    },
-
-    format: function () {
-      return formattedPostcode
-    }
-  }
-}
-
-const sanitise = function (postcode) {
+function sanitise (postcode) {
   postcode = postcode || ''
   postcode = postcode.replace(/\s+/g, '')
   postcode = postcode.replace(/\+/g, '')
@@ -30,6 +15,23 @@ const sanitise = function (postcode) {
   return postcode
 }
 
-const validate = function (postcode) {
+function validate (postcode) {
   return !!postcode.match(validationRegex)
 }
+
+function Postcode (rawPostcode) {
+  var formattedPostcode = sanitise(rawPostcode)
+  var valid = validate(formattedPostcode)
+
+  return {
+    valid: function () {
+      return valid
+    },
+
+    format: function () {
+      return formattedPostcode
+    }
+  }
+}
+
+module.exports = Postcode
