@@ -9,7 +9,7 @@
 ## Usage
 
 ```js
-const Postcode = require('dh-postcode')
+import Postcode from 'dh-postcode'
 const postcode = Postcode('e C  1a1  Ah  ')
 
 postcode.valid() // => true
@@ -21,4 +21,4 @@ postcode.format() // => 'EC1A 1AH'
 [MIT License]: https://img.shields.io/npm/l/dh-postcode.svg
 [Standard]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [Standard Version]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg
-[Size]: https://badge-size.herokuapp.com/danhayden/dh-postcode/master/index.js
+[Size]: https://badges.herokuapp.com/size/npm/dh-postcode/dist/postcode.js?gzip=true&label=gzipped
