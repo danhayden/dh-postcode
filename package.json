@@ -18,16 +18,12 @@
     "formatting"
   ],
   "devDependencies": {
-    "jest": "18.1.0",
-    "standard": "8.6.0",
+    "jest": "20.0.1",
+    "standard": "10.0.2",
     "standard-version": "4.0.0"
   },
   "author": "Dan Hayden <dhayden09@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jest": "18.1.0",
-    "standard": "8.6.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danhayden/dh-postcode.git"
