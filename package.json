@@ -14,7 +14,8 @@
     "lint": "standard --format",
     "changelog": "standard-version",
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "postcode",
