@@ -2,15 +2,19 @@
   "name": "dh-postcode",
   "version": "1.0.2",
   "description": "simple uk postcode validation and formatting",
-  "main": "index.js",
+  "main": "dist/postcode.js",
+  "module": "dist/postcode.es.js",
+  "umd:main": "dist/postcode.umd.js",
   "files": [
-    "index.js"
+    "dist"
   ],
   "scripts": {
     "pretest": "standard",
     "test": "jest",
     "lint": "standard --format",
-    "changelog": "standard-version"
+    "changelog": "standard-version",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "keywords": [
     "postcode",
@@ -18,9 +22,16 @@
     "formatting"
   ],
   "devDependencies": {
+    "babel-preset-env": "1.4.0",
     "jest": "20.0.1",
+    "rollup": "0.41.6",
+    "rollup-plugin-babel": "2.7.1",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "1.0.2",
+    "rollup-watch": "3.2.2",
     "standard": "10.0.2",
-    "standard-version": "4.0.0"
+    "standard-version": "4.0.0",
+    "uglify-js-harmony": "2.7.7"
   },
   "author": "Dan Hayden <dhayden09@gmail.com>",
   "license": "MIT",
@@ -31,5 +42,11 @@
   "bugs": {
     "url": "https://github.com/danhayden/dh-postcode/issues"
   },
-  "homepage": "https://github.com/danhayden/dh-postcode#readme"
+  "homepage": "https://github.com/danhayden/dh-postcode#readme",
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/**"
+    ]
+  }
 }

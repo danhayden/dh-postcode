@@ -1,5 +1,5 @@
-var validationRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i
-var NON_BREAKING_SPACE = ' '
+const validationRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i
+const NON_BREAKING_SPACE = ' '
 
 function sanitise (postcode) {
   postcode = postcode || ''
@@ -20,18 +20,18 @@ function validate (postcode) {
 }
 
 function Postcode (rawPostcode) {
-  var formattedPostcode = sanitise(rawPostcode)
-  var valid = validate(formattedPostcode)
+  const formattedPostcode = sanitise(rawPostcode)
+  const valid = validate(formattedPostcode)
 
   return {
-    valid: function () {
+    valid () {
       return valid
     },
 
-    format: function () {
+    format () {
       return formattedPostcode
     }
   }
 }
 
-module.exports = Postcode
+export default Postcode
